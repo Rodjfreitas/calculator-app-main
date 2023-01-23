@@ -45,6 +45,7 @@
   --global-size-padding: 20px;
   --global-type-display: flex;
   --global-position-content: center;
+  --global-font-family: font-family: 'League Spartan', sans-serif;
 
 
 
@@ -54,4 +55,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body{
+  font-family: var(--global-font-family);
 }

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Calculator app</title>
+  <title>Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -20,12 +20,53 @@
   </style>
 </head>
 <body>
+  <main>
+    <div id="calculator">
+      <header>
+        <h3>calc</h3>
+        <p>theme</p>
+      </header>
+
+      <div id="main">
+        <div id="operation">
+          <div id="previous-operation">123 +</div>
+          <div id="currenty-operation">412</div>
+        </div>
+        <div id="keypad">
+          <div id="numbers">
+            <button class="btn-number">7</button>
+            <button class="btn-number">8</button>
+            <button class="btn-number">9</button>
+            <button class="btn-text restart">DEL</button>
+            <button class="btn-number">4</button>
+            <button class="btn-number">5</button>
+            <button class="btn-number">6</button>
+            <button class="btn-text">+</button>
+            <button class="btn-number">1</button>
+            <button class="btn-number">2</button>
+            <button class="btn-number">3</button>
+            <button class="btn-text">-</button>
+            <button class="btn-text">.</button>
+            <button class="btn-number">0</button>
+            <button class="btn-text">/</button>
+            <button class="btn-text">X</button>
+          </div>
+          <div id="result">
+            <button class="btn-text restart">RESET</button>
+            <button class="btn-text result">=</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </main>
 
 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/Rodjfreitas">Rodrigo Freitas</a>.
+  </footer>
 </body>
 </html>

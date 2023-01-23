@@ -74,10 +74,23 @@ main{
 }
 header{
   display: var(--global-type-display);
-  flex-direction: row;
+  align-items: flex-end;
   justify-content: space-between;
   padding: var(--global-size-space);
+  color: var(--global-Sectext-color);
 }
+
+h1{
+  font-weight: var(--global-font-weight);
+  letter-spacing: -2px;  
+  font-size: 45px;
+  
+}
+
+p{
+  font-size: 15px;
+}
+
 #calculator,header{
   background-color: var(--theme1-back_main-color);
 }
@@ -91,7 +104,7 @@ header{
   color:var(--global-Sectext-color);
   font-weight: var( --global-font-weight);
   border-radius:var(--global-border-radius);
-  font-size: var(--global-numb-size);
+  font-size: 45px;
 }
 
 #keypad{  
@@ -116,6 +129,9 @@ button{
   border-radius: 10px;
   box-shadow:inset 0 -5px 0 0 var(--theme1-Mainkey_shadow-color);
   border-collapse: collapse;
+  font-weight: var(--global-font-weight);
+  color: var(--theme1-Maintext-color);
+  background-color: var(--theme1-MainKey_back-color);
   
 }
 
@@ -129,7 +145,7 @@ button{
 #numbers button{
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: var(--global-font-weight);
+  
 }
 
 #result{
@@ -146,6 +162,13 @@ button{
 #numbers .restart,#result .restart{
   background-color:var(--theme1-Resetkey_back-color) ;
   box-shadow:inset 0 -5px 0 0 var(--theme1-Resetkey_shadow-color);
+  color: var(--global-Sectext-color);
+}
+
+#result .result{
+  background-color: var(--theme1-Resultkey_back-color);
+  box-shadow:inset 0 -5px 0 0 var(--theme1-Resultkey_shadow-color);
+  color: var(--global-Sectext-color);
 }
 
 .btn-number{

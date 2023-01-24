@@ -2,13 +2,13 @@
 
 CSS Código anterior
 
-```.seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,
-.adiction.active,.one.active,.two.active,.three.active,.sub.active,.dot.active,
-.zero.active,.bar.active,.mult.active{
-  box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
-  color: var(--theme2-Maintext-color);
-  background-color: var(--theme2-MainKey_back-color);
-  }```
+```.seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,```
+```.adiction.active,.one.active,.two.active,.three.active,.sub.active,.dot.active,```
+```.zero.active,.bar.active,.mult.active{```
+  ```box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);```
+  ```color: var(--theme2-Maintext-color);```
+  ```background-color: var(--theme2-MainKey_back-color);```
+  ```}```
 
   CSS Código posterior
 

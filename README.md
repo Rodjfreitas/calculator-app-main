@@ -15,21 +15,23 @@
 <h3> Dia 1: Primeiros Passos.</h3>
 
   <li> Pesquisar a respeito do funcionamento de uma calculadora em tela;</li>
-  <li> Pesquisar sobre como definir variáveis em CSS. Pesquisar;</li>
+  <li> Pesquisar sobre como definir variáveis em CSS.</li>
   <li> Pesquisar a respeito de alteração de temas na tela.</li>
+  <p></p>
 
 <p> Iniciei o projeto dando total atenção a criação e estilização da calculadora, levando como base o tema principal. Como de praxes nos últimos projetos, estou fazendo toda a estilização inicial pelo método "first mobile".</p> 
-<p> Já realizei a inclusão das variáveis no css, e por mais que não há muita repetição de cores no código, essa prática é muito bem-vinda, e também me habituarei a utilizá-la daqui pra frente. Facilita demais na inserção de informações dentro do css, e na necessidade de mudar alguma propriedade, falo-ei apenas na declaração, o que economiza muito  tempo pra mudanças futuras de estilização. Este foi um novo aprendizado para este projeto, e fico muito feliz de tê-lo aprendido e colocado em prática.</p>
+<p> Já realizei a inclusão das variáveis no css, e por mais que não haja muita repetição de cores no código, essa prática é muito bem-vinda, e também me habituarei a utilizá-la daqui pra frente. Facilita demais na inserção de informações dentro do css, e na necessidade de mudar alguma propriedade, falo-ei apenas na declaração, o que economiza muito  tempo pra mudanças futuras de estilização. Este foi um novo aprendizado para este projeto, e fico muito feliz de tê-lo aprendido e colocado em prática.</p>
 
 <h3> Dia 2</h3>
 
-<p> Nesta etapa do projeto, já configurei o layout da calculadora, apliquei as estilizações, posicionamento, etcl. O foco agora é fazer com que as alterações de tam funcione. Para isso, estou aplicando o ```variavel.classList.toggle('active')``` no java. O primeiro problema que me deparei é que ao declarar a variável para o objeto button, esta função não esta aplicando o active para todos os botões, senão, somente para o primeiro botão da lista.</p>
+<p> Nesta etapa do projeto, já configurei o layout da calculadora, apliquei as estilizações, posicionamento, etc. O foco agora é fazer com que as alterações de tema funcione. Para isso, estou aplicando o `(variavel).classList.toggle('active')` no java. O primeiro problema que me deparei é que ao declarar a variável para o objeto button, esta função não esta aplicando o active para todos os botões, senão, somente para o primeiro botão da lista.</p>
 
 <p> Em um primeiro momento, a solução encontrada foi criar uma classe especifica para cada botão e aplicar a estilização e o código javascript para essas classes individualmente: Sugestões são sempre bem-vindas.</p>
 
 <p> HTML:</p>
 
-`  div id="keypad">
+`  
+div id="keypad">
           <div id="numbers">
             <button class="btn-number seven">7</button>
             <button class="btn-number eight">8</button>
@@ -68,8 +70,8 @@
 
 <p> JavaScript:</p>
 
-       `Operation.classList.toggle('active');
-
+`
+Operation.classList.toggle('active');
 const Keypad = document.querySelector('#keypad');
 Keypad.classList.toggle('active');
 const p = document.querySelector('p');
@@ -115,7 +117,8 @@ btn_zero.classList.toggle('active');
 const btn_bar = document.querySelector('.bar');
 btn_bar.classList.toggle('active');
 const btn_mult = document.querySelector('.mult');
-btn_mult.classList.toggle('active'); `
+btn_mult.classList.toggle('active'); 
+`
 
 <p> Meu próximo passo, antes de criar a funcionalidade da calculadora, é criar o mecanismo para o terceiro tema. Ainda não consegui identificar a forma de criar essa funcionalidade.</p>
 
@@ -123,14 +126,17 @@ btn_mult.classList.toggle('active'); `
 
   <li> CSS Código posterior</li>
 
-`#keypad.active button{
+`
+#keypad.active button{
       box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
       color: var(--theme2-Maintext-color);
-      background-color: var(--theme2-MainKey_back-color);}`
+      background-color: var(--theme2-MainKey_back-color);}
+      `
 
   <li> Javascript código posterior</li>
 
-`Operation.classList.toggle('active');
+`
+Operation.classList.toggle('active');
   const Keypad = document.querySelector('#keypad');
     Keypad.classList.toggle('active');
   const result = document.querySelector('.result');
@@ -138,4 +144,5 @@ btn_mult.classList.toggle('active'); `
   const body = document.querySelector('body');
     body.classList.toggle('active');
   const footer = document.querySelector('.attribution');
-    footer.classList.toggle('active');`
+    footer.classList.toggle('active');
+    `

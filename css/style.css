@@ -163,7 +163,7 @@ p{
   
 }
 
-.seven,.eight,.nine,.four,.five,.six,.adiction,.one,.two,.trhee,.sub,.dot,
+.seven,.eight,.nine,.four,.five,.six,.adiction,.one,.two,.three,.sub,.dot,
 .zero,.bar,.mult,.reset,.del,.result{
   border: none;
   border-radius: 10px;
@@ -243,7 +243,8 @@ p.active{
   background-color: var(--theme2-back_keypad-color);  
 }
 
-.seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,.adiction.active,.one.active,.two.active,.trhee.active,.sub.active,.dot.active,
+.seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,
+.adiction.active,.one.active,.two.active,.three.active,.sub.active,.dot.active,
 .zero.active,.bar.active,.mult.active{
   box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
   color: var(--theme2-Maintext-color);

@@ -24,8 +24,7 @@ chk.addEventListener('change',() =>{
   const ball = document.querySelector('.ball');
     ball.classList.toggle('active');
   const body = document.querySelector('body');
-    body.classList.toggle('active');    
-
+    body.classList.toggle('active');
   const btn_seven = document.querySelector('.seven');
   btn_seven.classList.toggle('active');
   const btn_eight = document.querySelector('.eight');
@@ -44,7 +43,7 @@ chk.addEventListener('change',() =>{
     btn_one.classList.toggle('active');
   const btn_two = document.querySelector('.two');
     btn_two.classList.toggle('active');
-  const btn_trhee = document.querySelector('.trhee');
+  const btn_trhee = document.querySelector('.three');
     btn_trhee.classList.toggle('active');
   const btn_sub = document.querySelector('.sub');
     btn_sub.classList.toggle('active');

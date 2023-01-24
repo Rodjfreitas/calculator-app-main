@@ -1,33 +1,33 @@
-<h1> Aplicativo Calculadora
+<h1> Aplicativo Calculadora</h1>
 
-<h2> Objetivo
+<h2> Objetivo</h2>
 
-<p> Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSSe a criação de variáveis dentro do css.
+<p> Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSSe a criação de variáveis dentro do css.</p>
 
-<p> Outro conteúdo novo que executarei neste projeto é a criação de uma chave para alterar o tema de exibição da tela e do seu conteúdo.
+<p> Outro conteúdo novo que executarei neste projeto é a criação de uma chave para alterar o tema de exibição da tela e do seu conteúdo.</p>
 
-<h2> Desafios
+<h2> Desafios</h2>
 
-<p> Este projeto é desafiador porque possui diversas tarefas que serão inéditas para mim. A criação da calculadora, sua funcionalidade, alteração de temas em tela a partir de seleção de um botão, criação de variáveis de css, execução de conventional commits, utilização de funções IIFE no javascript, entre outros.
+<p> Este projeto é desafiador porque possui diversas tarefas que serão inéditas para mim. A criação da calculadora, sua funcionalidade, alteração de temas em tela a partir de seleção de um botão, criação de variáveis de css, execução de conventional commits, utilização de funções IIFE no javascript, entre outros.</p>
 
-<h2> O Desenvolvimento
+<h2>O Desenvolvimento</h2>
 
-<h3> Dia 1: Primeiros Passos.
+<h3> Dia 1: Primeiros Passos.</h3>
 
-  <li> Pesquisar a respeito do funcionamento de uma calculadora em tela;
-  <li> Pesquisar sobre como definir variáveis em CSS. Pesquisar;
-  <li> Pesquisar a respeito de alteração de temas na tela.
+  <li> Pesquisar a respeito do funcionamento de uma calculadora em tela;</li>
+  <li> Pesquisar sobre como definir variáveis em CSS. Pesquisar;</li>
+  <li> Pesquisar a respeito de alteração de temas na tela.</li>
 
-<p> Iniciei o projeto dando total atenção a criação e estilização da calculadora, levando como base o tema principal. Como de praxes nos últimos projetos, estou fazendo toda a estilização inicial pelo método "first mobile". 
-<p> Já realizei a inclusão das variáveis no css, e por mais que não há muita repetição de cores no código, essa prática é muito bem-vinda, e também me habituarei a utilizá-la daqui pra frente. Facilita demais na inserção de informações dentro do css, e na necessidade de mudar alguma propriedade, falo-ei apenas na declaração, o que economiza muito  tempo pra mudanças futuras de estilização. Este foi um novo aprendizado para este projeto, e fico muito feliz de tê-lo aprendido e colocado em prática.
+<p> Iniciei o projeto dando total atenção a criação e estilização da calculadora, levando como base o tema principal. Como de praxes nos últimos projetos, estou fazendo toda a estilização inicial pelo método "first mobile".</p> 
+<p> Já realizei a inclusão das variáveis no css, e por mais que não há muita repetição de cores no código, essa prática é muito bem-vinda, e também me habituarei a utilizá-la daqui pra frente. Facilita demais na inserção de informações dentro do css, e na necessidade de mudar alguma propriedade, falo-ei apenas na declaração, o que economiza muito  tempo pra mudanças futuras de estilização. Este foi um novo aprendizado para este projeto, e fico muito feliz de tê-lo aprendido e colocado em prática.</p>
 
-<h3> Dia 2
+<h3> Dia 2</h3>
 
-<p> Nesta etapa do projeto, já configurei o layout da calculadora, apliquei as estilizações, posicionamento, etcl. O foco agora é fazer com que as alterações de tam funcione. Para isso, estou aplicando o ```variavel.classList.toggle('active')``` no java. O primeiro problema que me deparei é que ao declarar a variável para o objeto button, esta função não esta aplicando o active para todos os botões, senão, somente para o primeiro botão da lista.
+<p> Nesta etapa do projeto, já configurei o layout da calculadora, apliquei as estilizações, posicionamento, etcl. O foco agora é fazer com que as alterações de tam funcione. Para isso, estou aplicando o ```variavel.classList.toggle('active')``` no java. O primeiro problema que me deparei é que ao declarar a variável para o objeto button, esta função não esta aplicando o active para todos os botões, senão, somente para o primeiro botão da lista.</p>
 
-<p> Em um primeiro momento, a solução encontrada foi criar uma classe especifica para cada botão e aplicar a estilização e o código javascript para essas classes individualmente: Sugestões são sempre bem-vindas.
+<p> Em um primeiro momento, a solução encontrada foi criar uma classe especifica para cada botão e aplicar a estilização e o código javascript para essas classes individualmente: Sugestões são sempre bem-vindas.</p>
 
-<p> HTML:
+<p> HTML:</p>
 
 `  div id="keypad">
           <div id="numbers">
@@ -54,7 +54,7 @@
          </div>
         `
 
-<p> CSS:
+<p> CSS:</p>
 
     `
     .seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,
@@ -66,7 +66,7 @@
       }
       `
 
-<p> JavaScript:
+<p> JavaScript:</p>
 
        `Operation.classList.toggle('active');
 
@@ -117,18 +117,18 @@ btn_bar.classList.toggle('active');
 const btn_mult = document.querySelector('.mult');
 btn_mult.classList.toggle('active'); `
 
-<p> Meu próximo passo, antes de criar a funcionalidade da calculadora, é criar o mecanismo para o terceiro tema. Ainda não consegui identificar a forma de criar essa funcionalidade.
+<p> Meu próximo passo, antes de criar a funcionalidade da calculadora, é criar o mecanismo para o terceiro tema. Ainda não consegui identificar a forma de criar essa funcionalidade.</p>
 
-<p> Me deparando com a linha de códigos para transição de tela no javascript, me senti incomodado com a quantidade de variáveis que estava declarando dentro das funções, principalmente dos botões numericos e operadores. Comecei a realizar vários testes, até descobrir que eu precisaria apontar um toggle ativo apenas para a caixa principal de cada elemento, e que a partir daí, eu poderia simplesmente alterar as propriedades no css para que o código funcionasse perfeitamente e limpo. Mais um aprendizado na utilização do javascript.
+<p> Me deparando com a linha de códigos para transição de tela no javascript, me senti incomodado com a quantidade de variáveis que estava declarando dentro das funções, principalmente dos botões numericos e operadores. Comecei a realizar vários testes, até descobrir que eu precisaria apontar um toggle ativo apenas para a caixa principal de cada elemento, e que a partir daí, eu poderia simplesmente alterar as propriedades no css para que o código funcionasse perfeitamente e limpo. Mais um aprendizado na utilização do javascript.</p>
 
-  <li> CSS Código posterior
+  <li> CSS Código posterior</li>
 
 `#keypad.active button{
       box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
       color: var(--theme2-Maintext-color);
       background-color: var(--theme2-MainKey_back-color);}`
 
-  <li> Javascript código posterior
+  <li> Javascript código posterior</li>
 
 `Operation.classList.toggle('active');
   const Keypad = document.querySelector('#keypad');

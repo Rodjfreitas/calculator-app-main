@@ -62,6 +62,7 @@
 body{
   font-family: var(--global-font-family);
   background-color: var(--theme1-back_main-color);
+  transition: background 0.5s ease-in;
 }
 
 main{
@@ -77,7 +78,7 @@ main{
   background-color: var(--theme1-back_main-color);
   display: var(--global-type-display);
   flex-direction: column; 
-  
+  transition: background 0.5s ease-in;
 }
 
 header{
@@ -87,6 +88,7 @@ header{
   justify-content: space-between;
   padding: var(--global-size-space);
   color: var(--global-Sectext-color);
+  transition: background 0.5s ease-in;
 }
 
 h1{
@@ -146,6 +148,7 @@ p{
   font-weight: var( --global-font-weight);
   border-radius:var(--global-border-radius);
   font-size: 45px;
+  transition: background 0.3s ease-in;
 }
 
 
@@ -160,6 +163,7 @@ p{
   padding: var(--global-size-space);
   margin: var(--global-size-space);
   border-radius:var(--global-border-radius);
+  transition: background 0.3s ease-in;
   
 }
 
@@ -172,6 +176,7 @@ p{
   font-weight: var(--global-font-weight);
   color: var(--theme1-Maintext-color);
   background-color: var(--theme1-MainKey_back-color);
+  transition: background 0.3s ease-in;
   
 }
 

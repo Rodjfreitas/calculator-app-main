@@ -2,6 +2,18 @@ const theme1 = document.querySelector('#chk1')
 const theme2 = document.querySelector('#chk2')
 const theme3 = document.querySelector('#chk3')
 const html = document.querySelector('html');
+const previousOperationtext = document.querySelector('#previous-operation');
+const currentyOperationtext = document.querySelector('#currenty-operation');
+const buttons = document.querySelectorAll('#numbers');
+
+
+buttons.forEach((btn)=>{
+  btn.addEventListener('click',(e)=>{
+    const value = e.target.innerText;
+    console.log(value);
+  })
+})
+
 
 function theme1click(){
   html.classList.remove('theme2');

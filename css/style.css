@@ -10,6 +10,7 @@
   --theme-Mainkey_shadow-color:hsl(28, 16%, 65%);
   --theme-Maintext-color:hsl(221, 14%, 31%);
   --theme-Operation-color:hsl(30, 25%, 89%);
+  --theme-hovernumber-color:hsl(30, 25%, 89%);
   
   --global-Sectext-color:hsl(0, 0%, 100%);
   --global-size-space: 20px;
@@ -35,6 +36,7 @@
   --theme-Mainkey_shadow-color:hsl(35, 11%, 61%);
   --theme-Maintext-color:hsl(60, 10%, 19%);
   --theme-Operation-color:hsl(60, 10%, 19%);
+  --theme-hovernumber-color:hsl(30, 25%, 89%);
   
 
 }
@@ -51,6 +53,7 @@
   --theme-Mainkey_shadow-color:hsl(290, 70%, 36%);
   --theme-Maintext-color:hsl(52, 100%, 62%);
   --theme-Operation-color:hsl(52, 100%, 62%);
+  --theme-hovernumber-color:hsl(52, 100%, 62%);
   
 }
 
@@ -201,7 +204,7 @@ label i{
 }
 
 button{
-  border: none;
+  border: 1px solid transparent;
   border-radius: 10px;
   box-shadow:inset 0 -5px 0 0 var(--theme-Mainkey_shadow-color);
   border-collapse: collapse;
@@ -210,6 +213,13 @@ button{
   background-color: var(--theme-MainKey_back-color);
   transition: background 0.3s ease-in;
   
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--theme-Resetkey_shadow-color);
+  box-shadow:inset 0 -5px 0 0 var(--theme-Resetkey_back-color);
+  color: var(--theme-hovernumber-color);  
 }
 
 #numbers{

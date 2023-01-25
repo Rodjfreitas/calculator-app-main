@@ -5,10 +5,6 @@ const chk = document.querySelector('#chk');
 chk.addEventListener('change',() =>{
   const calculator = document.querySelector('#calculator');
     calculator.classList.toggle('active');
-  const header = document.querySelector('header');
-    header.classList.toggle('active');
-  const Operation = document.querySelector('#operation');
-    Operation.classList.toggle('active');
   const Keypad = document.querySelector('#keypad');
     Keypad.classList.toggle('active');
   const result = document.querySelector('.result');

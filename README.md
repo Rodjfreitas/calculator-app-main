@@ -118,7 +118,7 @@
 
 <p> Me deparando com a linha de códigos para transição de tela no javascript, me senti incomodado com a quantidade de variáveis que estava declarando dentro das funções, principalmente dos botões numericos e operadores. Comecei a realizar vários testes, até descobrir que eu precisaria apontar um toggle ativo apenas para a caixa principal de cada elemento, e que a partir daí, eu poderia simplesmente alterar as propriedades no css para que o código funcionasse perfeitamente e limpo. Mais um aprendizado na utilização do javascript.</p>
 
-  <li> CSS Código posterior</li>
+  <ul><li> CSS Código posterior</li>
 
     #keypad.active button{
       box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
@@ -126,42 +126,41 @@
       background-color: var(--theme2-MainKey_back-color);
     }
 
-  <li> Javascript código posterior</li>
+  <li> Javascript código posterior</li></ul>
 
-    const chk = document.querySelector('#chk');
-
-
-
-    chk.addEventListener('change',() =>{
-      const calculator = document.querySelector('#calculator');
-        calculator.classList.toggle('active');
-      const header = document.querySelector('header');
-        header.classList.toggle('active');
-      const Operation = document.querySelector('#operation');
-        Operation.classList.toggle('active');
-      const Keypad = document.querySelector('#keypad');
-        Keypad.classList.toggle('active');
-      const result = document.querySelector('.result');
-        result.classList.toggle('active');
-      const body = document.querySelector('body');
-        body.classList.toggle('active');
-      const footer = document.querySelector('.attribution');
-        footer.classList.toggle('active');
+      const chk = document.querySelector('#chk');
+      chk.addEventListener('change',() =>{
+        const calculator = document.querySelector('#calculator');
+          calculator.classList.toggle('active');
+        const header = document.querySelector('header');
+          header.classList.toggle('active');
+        const Operation = document.querySelector('#operation');
+          Operation.classList.toggle('active');
+        const Keypad = document.querySelector('#keypad');
+          Keypad.classList.toggle('active');
+        const result = document.querySelector('.result');
+          result.classList.toggle('active');
+        const body = document.querySelector('body');
+          body.classList.toggle('active');
+        const footer = document.querySelector('.attribution');
+          footer.classList.toggle('active');
     })
 
 
-    <h3> Dia 3</h3>
+<h3> Dia 3 </h3>
 
-    <p>Hoje a principal tarefa do dia e ra finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
+    
 
-    <p> Após algumas pesquisas e estudos, consegui entender melhor o funcionamento do input. Como mencionado, o input estava configurado do tipo "checkbox", porém este tipo permite que fossem selecionadas mais de uma opção ao mesmo tempo, o que invalidava a proposição do código. Mediante as minhas pesquisas e estudos, realizei a alteração do tipo de input para "radio", e inclui a mesma nomeação para os três. Com isso, ao selecionar um input, ele automaticamente desmarca outro que possívelmente havia sido selecionado. Isso solucionou o problema, e ao aplicar o javascript, o código ja exerce a função de alteração de tema corretamente.</p>
+  <p>Hoje a principal tarefa do dia e ra finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
+
+  <p> Após algumas pesquisas e estudos, consegui entender melhor o funcionamento do input. Como mencionado, o input estava configurado do tipo "checkbox", porém este tipo permite que fossem selecionadas mais de uma opção ao mesmo tempo, o que invalidava a proposição do código. Mediante as minhas pesquisas e estudos, realizei a alteração do tipo de input para "radio", e inclui a mesma nomeação para os três. Com isso, ao selecionar um input, ele automaticamente desmarca outro que possívelmente havia sido selecionado. Isso solucionou o problema, e ao aplicar o javascript, o código ja exerce a função de alteração de tema corretamente.</p>
 
         <input type="radio"  id="chk1" class="checkbox" name="theme">
         <input type="radio"  id="chk2" class="checkbox" name="theme">
         <input type="radio"  id="chk3" class="checkbox" name="theme">
 
 
-    <p>Mesmo com todas essas alterações, e com a funcionalidade do tema se aplicando corretamente, aprendi uma maneira mais eficaz de simplificar o código de transição de tema, utilizando as variáveis de css. Declarando as variáveis, separando-as por classes inseridas no html, pude enxugar as linhas de código do css e também do java script. Reorganizei todo o código em cima desse conceito, e estou maravilhado com o poder que a declaração de variáveis dentro do css tem.</p>
+  <p>Mesmo com todas essas alterações, e com a funcionalidade do tema se aplicando corretamente, aprendi uma maneira mais eficaz de simplificar o código de transição de tema, utilizando as variáveis de css. Declarando as variáveis, separando-as por classes inseridas no html, pude enxugar as linhas de código do css e também do java script. Reorganizei todo o código em cima desse conceito, e estou maravilhado com o poder que a declaração de variáveis dentro do css tem.</p>
 
         :root{
       --theme-back_main-color:hsl(222, 26%, 31%);

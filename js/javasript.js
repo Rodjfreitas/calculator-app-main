@@ -6,13 +6,20 @@ const previousOperationtext = document.querySelector('#previous-operation');
 const currentyOperationtext = document.querySelector('#currenty-operation');
 const buttons = document.querySelectorAll('#numbers');
 
-
+/**criando evento para capturar valor da tecla */
 buttons.forEach((btn)=>{
   btn.addEventListener('click',(e)=>{
     const value = e.target.innerText;
-    console.log(value);
+    /**realizando a distinção do que é número e do que é operador */
+    if(+value >= 0 || value === "."){
+      console.log(value);
+    }else{
+      console.log("OP "+ value);
+    }
   })
 })
+
+
 
 
 function theme1click(){

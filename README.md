@@ -1,18 +1,25 @@
-<h1> Aplicativo Calculadora</h1>
+<h1>Aplicativo Calculadora</h1>
 
-<h2> Objetivo</h2>
+<h2>Objetivo</h2>
 
-<p> Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSSe a criação de variáveis dentro do css.</p>
+<p>Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSSe a criação de variáveis dentro do css.</p>
 
 <p> Outro conteúdo novo que executarei neste projeto é a criação de uma chave para alterar o tema de exibição da tela e do seu conteúdo.</p>
 
-<h2> Desafios</h2>
+<h2>Desafios</h2>
 
 <p> Este projeto é desafiador porque possui diversas tarefas que serão inéditas para mim. A criação da calculadora, sua funcionalidade, alteração de temas em tela a partir de seleção de um botão, criação de variáveis de css, execução de conventional commits, utilização de funções IIFE no javascript, entre outros.</p>
 
+<h2>Aprendizados</h2>
+
+🕮 <p>Criar menu toggle;</p>
+🕮 <p>Declarar variáveis no css;</p>
+🕮 <p>Aplicabilidade do input e seus tipos;</p>
+🕮 <p>Transição de temas de página</p>
+
 <h2>O Desenvolvimento</h2>
 
-<h3> Dia 1: Primeiros Passos.</h3>
+<h3>Dia 1: Primeiros Passos.</h3>
 
   <li> Pesquisar a respeito do funcionamento de uma calculadora em tela;</li>
   <li> Pesquisar sobre como definir variáveis em CSS.</li>
@@ -151,9 +158,9 @@
 
     
 
-  <p>Hoje a principal tarefa do dia e ra finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
+  <p>Hoje a principal tarefa do dia era finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
 
-  <p> Após algumas pesquisas e estudos, consegui entender melhor o funcionamento do input. Como mencionado, o input estava configurado do tipo "checkbox", porém este tipo permite que fossem selecionadas mais de uma opção ao mesmo tempo, o que invalidava a proposição do código. Mediante as minhas pesquisas e estudos, realizei a alteração do tipo de input para "radio", e inclui a mesma nomeação para os três. Com isso, ao selecionar um input, ele automaticamente desmarca outro que possívelmente havia sido selecionado. Isso solucionou o problema, e ao aplicar o javascript, o código ja exerce a função de alteração de tema corretamente.</p>
+  <p> Após algumas pesquisas e estudos, consegui entender melhor o funcionamento do input. Como mencionado, o input estava configurado do tipo "checkbox", porém este tipo permite que fossem selecionadas mais de uma opção ao mesmo tempo, o que invalidava a proposição do código. Mediante as minhas pesquisas e estudos, realizei a alteração do tipo de input para "radio", e incluí a mesma nomeação para os três. Com isso, ao selecionar um input, ele automaticamente desmarca outro que possívelmente havia sido selecionado. Isso solucionou o problema, e ao aplicar o javascript, o código ja exerce a função de alteração de tema corretamente.</p>
 
         <input type="radio"  id="chk1" class="checkbox" name="theme">
         <input type="radio"  id="chk2" class="checkbox" name="theme">

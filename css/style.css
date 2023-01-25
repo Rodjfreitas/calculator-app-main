@@ -77,7 +77,6 @@ main{
 }
 
 
-
 #calculator{  
   background-color: var(--theme-back_main-color);
   display: var(--global-type-display);
@@ -157,6 +156,7 @@ label i{
 
 #operation{
   display: var(--global-type-display);
+  flex-direction: column;
   justify-content: flex-end;
   padding: var(--global-size-space);
   margin: var(--global-size-space);
@@ -167,6 +167,22 @@ label i{
   font-size: 45px;
   transition: background 0.3s ease-in;
 }
+
+#previous-operation,
+#currenty-operation{
+  overflow-wrap: break-word;
+  text-align: right;
+}
+
+#previous-operation{
+  font-size: var(--global-size-space);
+  min-height: 16px;  
+  padding: 5px;
+  text-align: right;
+  font-weight: 500;
+}
+
+
 
 
 

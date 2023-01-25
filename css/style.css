@@ -1,46 +1,17 @@
 :root{
-  --theme1-back_main-color:hsl(222, 26%, 31%);
-  --theme2-back_main-color:hsl(0, 0%, 90%);
-  --theme3-back_main-color:hsl(268, 75%, 9%);
-
-  --theme1-back_keypad-color: hsl(223, 31%, 20%);
-  --theme2-back_keypad-color: hsl(0, 5%, 81%);
-  --theme3-back_keypad-color: hsl(268, 71%, 12%);
-
-  --theme1-operation_screen-color:hsl(224, 36%, 15%);
-  --theme2-operation_screen-color:hsl(0, 0%, 93%);
-  --theme3-operation_screen-color:hsl(268, 71%, 12%);
-
-  --theme1-Resetkey_back-color:hsl(225, 21%, 49%);
-  --theme2-Resetkey_back-color:hsl(185, 42%, 37%);
-  --theme3-Resetkey_back-color:hsl(281, 89%, 26%);
-
-  --theme1-Resetkey_shadow-color:hsl(224, 28%, 35%);
-  --theme2-Resetkey_shadow-color:hsl(185, 58%, 25%);
-  --theme3-Resetkey_shadow-color:hsl(285, 91%, 52%);
-
-  --theme1-Resultkey_back-color:hsl(6, 63%, 50%);
-  --theme2-Resultkey_back-color:hsl(25, 98%, 40%);
-  --theme3-Resultkey_back-color:hsl(176, 100%, 44%);
-
-  --theme1-Resultkey_shadow-color:hsl(6, 70%, 34%);
-  --theme2-Resultkey_shadow-color:hsl(25, 99%, 27%);
-  --theme3-Resultkey_shadow-color:hsl(177, 92%, 70%);
-
-  --theme1-MainKey_back-color:hsl(30, 25%, 89%);
-  --theme2-MainKey_back-color:hsl(45, 7%, 89%);
-  --theme3-MainKey_back-color:hsl(268, 47%, 21%);
-
-  --theme1-Mainkey_shadow-color:hsl(28, 16%, 65%);
-  --theme2-Mainkey_shadow-color:hsl(35, 11%, 61%);
-  --theme3-Mainkey_shadow-color:hsl(290, 70%, 36%);
-
-  --theme1-Maintext-color:hsl(221, 14%, 31%);
-  --theme2-Maintext-color:hsl(60, 10%, 19%);
-  --theme3-Maintext-color:hsl(52, 100%, 62%);
-
+  --theme-back_main-color:hsl(222, 26%, 31%);
+  --theme-back_keypad-color: hsl(223, 31%, 20%);
+  --theme-operation_screen-color:hsl(224, 36%, 15%);
+  --theme-Resetkey_back-color:hsl(225, 21%, 49%);
+  --theme-Resetkey_shadow-color:hsl(224, 28%, 35%);
+  --theme-Resultkey_back-color:hsl(6, 63%, 50%);
+  --theme-Resultkey_shadow-color:hsl(6, 70%, 34%);
+  --theme-MainKey_back-color:hsl(30, 25%, 89%);
+  --theme-Mainkey_shadow-color:hsl(28, 16%, 65%);
+  --theme-Maintext-color:hsl(221, 14%, 31%);
+  --theme-Operation-color:hsl(30, 25%, 89%);
+  
   --global-Sectext-color:hsl(0, 0%, 100%);
-
   --global-size-space: 20px;
   --global-type-display: flex;
   --global-position-content: center;
@@ -52,6 +23,37 @@
 
 }
 
+.theme2:root{
+  --theme-back_main-color:hsl(0, 0%, 90%);
+  --theme-back_keypad-color: hsl(0, 5%, 81%);
+  --theme-operation_screen-color:hsl(0, 0%, 93%);
+  --theme-Resetkey_back-color:hsl(185, 42%, 37%);
+  --theme-Resetkey_shadow-color:hsl(185, 58%, 25%);
+  --theme-Resultkey_back-color:hsl(25, 98%, 40%);
+  --theme-Resultkey_shadow-color:hsl(25, 99%, 27%);
+  --theme-MainKey_back-color:hsl(45, 7%, 89%);
+  --theme-Mainkey_shadow-color:hsl(35, 11%, 61%);
+  --theme-Maintext-color:hsl(60, 10%, 19%);
+  --theme-Operation-color:hsl(60, 10%, 19%);
+  
+
+}
+
+.theme3:root{
+  --theme-back_main-color:hsl(268, 75%, 9%);
+  --theme-back_keypad-color: hsl(268, 71%, 12%);
+  --theme-operation_screen-color:hsl(268, 71%, 12%);
+  --theme-Resetkey_back-color:hsl(281, 89%, 26%);
+  --theme-Resetkey_shadow-color:hsl(285, 91%, 52%);
+  --theme-Resultkey_back-color:hsl(176, 100%, 44%);
+  --theme-Resultkey_shadow-color:hsl(177, 92%, 70%);
+  --theme-MainKey_back-color:hsl(268, 47%, 21%);
+  --theme-Mainkey_shadow-color:hsl(290, 70%, 36%);
+  --theme-Maintext-color:hsl(52, 100%, 62%);
+  --theme-Operation-color:hsl(52, 100%, 62%);
+  
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -61,8 +63,10 @@
 
 body{
   font-family: var(--global-font-family);
-  background-color: var(--theme1-back_main-color);
+  background-color: var(--theme-back_main-color);
   transition: background 0.5s ease-in;
+
+  
 }
 
 main{
@@ -75,20 +79,24 @@ main{
 
 
 #calculator{  
-  background-color: var(--theme1-back_main-color);
+  background-color: var(--theme-back_main-color);
   display: var(--global-type-display);
   flex-direction: column; 
   transition: background 0.5s ease-in;
 }
 
 header{
-  background-color: var(--theme1-back_main-color);
+  background-color: var(--theme-back_main-color);
   display: var(--global-type-display);
   align-items: flex-end;
   justify-content: space-between;
   padding: var(--global-size-space);
   color: var(--global-Sectext-color);
   transition: background 0.5s ease-in;
+}
+
+header h1{
+  color: var(--theme-Operation-color);
 }
 
 h1{
@@ -98,7 +106,7 @@ h1{
 
 p{
   font-size: 12px;
-  color: var(--global-Sectext-color);
+  color: var(--theme-Operation-color);
   margin-left: 40%;
 }
 
@@ -112,7 +120,7 @@ label i{
 }
 
 #seletor{
-  background-color: var(--theme1-back_keypad-color);
+  background-color: var(--theme-back_keypad-color);
   border-radius: 50px;
   padding: 5px;
   display: var(--global-type-display);
@@ -134,7 +142,7 @@ label i{
 
 
 #seletor .ball{
-  background-color: var( --theme1-Resultkey_shadow-color);
+  background-color: var( --theme-Resultkey_shadow-color);
   border-radius: 50%;
   position: absolute;
   top: 4px;
@@ -152,8 +160,8 @@ label i{
   justify-content: flex-end;
   padding: var(--global-size-space);
   margin: var(--global-size-space);
-  background-color:var(--theme1-operation_screen-color) ;
-  color:var(--global-Sectext-color);
+  background-color:var(--theme-operation_screen-color) ;
+  color:var(--theme-Operation-color);
   font-weight: var( --global-font-weight);
   border-radius:var(--global-border-radius);
   font-size: 45px;
@@ -163,7 +171,7 @@ label i{
 
 
 #keypad{
-  background-color: var(--theme1-back_keypad-color);
+  background-color: var(--theme-back_keypad-color);
   display:var(--global-type-display);
   flex-direction: column;
   justify-content: var(-global-position-content);
@@ -179,11 +187,11 @@ label i{
 button{
   border: none;
   border-radius: 10px;
-  box-shadow:inset 0 -5px 0 0 var(--theme1-Mainkey_shadow-color);
+  box-shadow:inset 0 -5px 0 0 var(--theme-Mainkey_shadow-color);
   border-collapse: collapse;
   font-weight: var(--global-font-weight);
-  color: var(--theme1-Maintext-color);
-  background-color: var(--theme1-MainKey_back-color);
+  color: var(--theme-Maintext-color);
+  background-color: var(--theme-MainKey_back-color);
   transition: background 0.3s ease-in;
   
 }
@@ -213,14 +221,14 @@ button{
 }
 
 .btn-text{
-  background-color:var(--theme1-Resetkey_back-color) ;
-  box-shadow:inset 0 -5px 0 0 var(--theme1-Resetkey_shadow-color);
+  background-color:var(--theme-Resetkey_back-color) ;
+  box-shadow:inset 0 -5px 0 0 var(--theme-Resetkey_shadow-color);
   color: var(--global-Sectext-color);
 }
 
 #result .result{
-  background-color: var(--theme1-Resultkey_back-color);
-  box-shadow:inset 0 -5px 0 0 var(--theme1-Resultkey_shadow-color);
+  background-color: var(--theme-Resultkey_back-color);
+  box-shadow:inset 0 -5px 0 0 var(--theme-Resultkey_shadow-color);
   color: var(--global-Sectext-color);
 }
 
@@ -234,129 +242,11 @@ button{
 .attribution { 
   font-size: 11px; 
   text-align: center;
-  color:var(--global-Sectext-color);
+  color:var(--theme-Operation-color);
   transition: color 0.3s ease-in;
  }
 .attribution a { 
-  color:var(--global-Sectext-color);
+  color:var(--theme-Operation-color);
   text-decoration: none;
  }
 
-
-/* theme 2 */
-
-
-body.active{
-  background-color:var(--theme2-back_main-color);
-}
-#calculator.active{
-  background-color:var(--theme2-back_main-color);  
-}
-#calculator.active header{
-  background-color: var(--theme2-back_main-color);
-  color: var(--theme2-Maintext-color);
-}
-#calculator.active header p{
-  color: var(--theme2-Maintext-color);
-}
-#calculator.active #operation{
-  background-color:var(--theme2-operation_screen-color) ;
-  color:var(--theme2-Maintext-color);
-}
-#keypad.active{
-  background-color: var(--theme2-back_keypad-color);  
-}
-
-#keypad.active button{
-  box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
-  color: var(--theme2-Maintext-color);
-  background-color: var(--theme2-MainKey_back-color); 
-}
-
-.btn-number.active{
-  box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
-  color: var(--theme2-Maintext-color);
-  background-color: var(--theme2-MainKey_back-color);   
-}
-#keypad.active .btn-text{
-  background-color:var(--theme2-Resetkey_back-color) ;
-  box-shadow:inset 0 -5px 0 0 var(--theme2-Resetkey_shadow-color);
-  color: var(--global-Sectext-color);
-}
-#result .result.active{
-  background-color: var(--theme2-Resultkey_back-color);
-  box-shadow:inset 0 -5px 0 0 var(--theme2-Resultkey_shadow-color);
-  color: var(--global-Sectext-color);
-}
-#calculator.active header #seletor{
-  background-color: var(--theme2-back_keypad-color)
-}
-#calculator.active header .ball{
-  background-color: var( --theme2-Resultkey_shadow-color);
-}
-
-.attribution.active {
-  color:var(--theme2-Maintext-color);
- }
-.attribution.active a { 
-  color:var(--theme2-Maintext-color);
- }
-
-
- /* theme 3 */
-
- body.active2{
-  background-color:var(--theme3-back_main-color);
-}
-#calculator.active2{
-  background-color:var(--theme3-back_main-color);  
-}
-#calculator.active2 header{
-  background-color: var(--theme3-back_main-color);
-  color: var(--theme2-Maintext-color);
-}
-#calculator.active2 header p{
-  color: var(--theme3-Maintext-color);
-}
-#calculator.active2 #operation{
-  background-color:var(--theme3-operation_screen-color) ;
-  color:var(--theme3-Maintext-color);
-}
-#keypad.active2{
-  background-color: var(--theme3-back_keypad-color);  
-}
-
-#keypad.active2 button{
-  box-shadow:inset 0 -5px 0 0 var(--theme3-Mainkey_shadow-color);
-  color: var(--theme3-Maintext-color);
-  background-color: var(--theme3-MainKey_back-color); 
-}
-
-.btn-number.active2{
-  box-shadow:inset 0 -5px 0 0 var(--theme3-Mainkey_shadow-color);
-  color: var(--theme3-Maintext-color);
-  background-color: var(--theme3-MainKey_back-color);   
-}
-#keypad.active2 .btn-text{
-  background-color:var(--theme3-Resetkey_back-color) ;
-  box-shadow:inset 0 -5px 0 0 var(--theme3-Resetkey_shadow-color);
-  color: var(--global-Sectext-color);
-}
-#result .result.active2{
-  background-color: var(--theme3-Resultkey_back-color);
-  box-shadow:inset 0 -5px 0 0 var(--theme3-Resultkey_shadow-color);
-  color: var(--global-Sectext-color);
-}
-#calculator.active2 header #seletor{
-  background-color: var(--theme3-back_keypad-color)
-}
-#calculator.active2 header .ball{
-  background-color: var( --theme3-Resultkey_shadow-color);
-}
-
-.attribution.active2 {
-  color:var(--theme3-Maintext-color);
- }
-.attribution.active2 a { 
-  color:var(--theme3-Maintext-color);
- }

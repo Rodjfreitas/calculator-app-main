@@ -30,7 +30,6 @@
 
 <p> HTML:</p>
 
-          
         div id="keypad">
           <div id="numbers">
             <button class="btn-number seven">7</button>
@@ -54,11 +53,9 @@
             <button class="btn-text reset">RESET</button>
             <button class="btn-text result">=</button>
          </div>
-        
 
 <p> CSS:</p>
 
-    
     .seven.active,.eight.active,.nine.active,.four.active,.five.active,.six.active,
     .adiction.active,.one.active,.two.active,.three.active,.sub.active,.dot.active,
     .zero.active,.bar.active,.mult.active{
@@ -66,10 +63,8 @@
       color: var(--theme2-Maintext-color);
       background-color: var(--theme2-MainKey_back-color);
     }
-    
 
 <p> JavaScript:</p>
-
 
     Operation.classList.toggle('active');
     const Keypad = document.querySelector('#keypad');
@@ -117,8 +112,7 @@
     const btn_bar = document.querySelector('.bar');
     btn_bar.classList.toggle('active');
     const btn_mult = document.querySelector('.mult');
-    btn_mult.classList.toggle('active'); 
-
+    btn_mult.classList.toggle('active');
 
 <p> Meu próximo passo, antes de criar a funcionalidade da calculadora, é criar o mecanismo para o terceiro tema. Ainda não consegui identificar a forma de criar essa funcionalidade.</p>
 
@@ -126,16 +120,13 @@
 
   <li> CSS Código posterior</li>
 
-
     #keypad.active button{
       box-shadow:inset 0 -5px 0 0 var(--theme2-Mainkey_shadow-color);
       color: var(--theme2-Maintext-color);
       background-color: var(--theme2-MainKey_back-color);
     }
-    
 
   <li> Javascript código posterior</li>
-
 
     const chk = document.querySelector('#chk');
 
@@ -157,4 +148,69 @@
       const footer = document.querySelector('.attribution');
         footer.classList.toggle('active');
     })
-    
+
+
+    <h3> Dia 3</h3>
+
+    <p>Hoje a principal tarefa do dia e ra finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
+
+    <p> Após algumas pesquisas e estudos, consegui entender melhor o funcionamento do input. Como mencionado, o input estava configurado do tipo "checkbox", porém este tipo permite que fossem selecionadas mais de uma opção ao mesmo tempo, o que invalidava a proposição do código. Mediante as minhas pesquisas e estudos, realizei a alteração do tipo de input para "radio", e inclui a mesma nomeação para os três. Com isso, ao selecionar um input, ele automaticamente desmarca outro que possívelmente havia sido selecionado. Isso solucionou o problema, e ao aplicar o javascript, o código ja exerce a função de alteração de tema corretamente.</p>
+
+        <input type="radio"  id="chk1" class="checkbox" name="theme">
+        <input type="radio"  id="chk2" class="checkbox" name="theme">
+        <input type="radio"  id="chk3" class="checkbox" name="theme">
+
+
+    <p>Mesmo com todas essas alterações, e com a funcionalidade do tema se aplicando corretamente, aprendi uma maneira mais eficaz de simplificar o código de transição de tema, utilizando as variáveis de css. Declarando as variáveis, separando-as por classes inseridas no html, pude enxugar as linhas de código do css e também do java script. Reorganizei todo o código em cima desse conceito, e estou maravilhado com o poder que a declaração de variáveis dentro do css tem.</p>
+
+        :root{
+      --theme-back_main-color:hsl(222, 26%, 31%);
+      --theme-back_keypad-color: hsl(223, 31%, 20%);
+      --theme-operation_screen-color:hsl(224, 36%, 15%);
+      --theme-Resetkey_back-color:hsl(225, 21%, 49%);
+      --theme-Resetkey_shadow-color:hsl(224, 28%, 35%);
+      --theme-Resultkey_back-color:hsl(6, 63%, 50%);
+      --theme-Resultkey_shadow-color:hsl(6, 70%, 34%);
+      --theme-MainKey_back-color:hsl(30, 25%, 89%);
+      --theme-Mainkey_shadow-color:hsl(28, 16%, 65%);
+      --theme-Maintext-color:hsl(221, 14%, 31%);
+      --theme-Operation-color:hsl(30, 25%, 89%);
+
+      --global-Sectext-color:hsl(0, 0%, 100%);
+      --global-size-space: 20px;
+      --global-type-display: flex;
+      --global-position-content: center;
+      --global-font-family: font-family: 'League Spartan', sans-serif;
+      --global-font-weight: 700;
+      --global-border-radius: 10px;
+      --global-numb-size:32px;
+      --global-font-size:20px
+    }
+
+    .theme2:root{
+      --theme-back_main-color:hsl(0, 0%, 90%);
+      --theme-back_keypad-color: hsl(0, 5%, 81%);
+      --theme-operation_screen-color:hsl(0, 0%, 93%);
+      --theme-Resetkey_back-color:hsl(185, 42%, 37%);
+      --theme-Resetkey_shadow-color:hsl(185, 58%, 25%);
+      --theme-Resultkey_back-color:hsl(25, 98%, 40%);
+      --theme-Resultkey_shadow-color:hsl(25, 99%, 27%);
+      --theme-MainKey_back-color:hsl(45, 7%, 89%);
+      --theme-Mainkey_shadow-color:hsl(35, 11%, 61%);
+      --theme-Maintext-color:hsl(60, 10%, 19%);
+      --theme-Operation-color:hsl(60, 10%, 19%);
+    }
+
+    .theme3:root{
+      --theme-back_main-color:hsl(268, 75%, 9%);
+      --theme-back_keypad-color: hsl(268, 71%, 12%);
+      --theme-operation_screen-color:hsl(268, 71%, 12%);
+      --theme-Resetkey_back-color:hsl(281, 89%, 26%);
+      --theme-Resetkey_shadow-color:hsl(285, 91%, 52%);
+      --theme-Resultkey_back-color:hsl(176, 100%, 44%);
+      --theme-Resultkey_shadow-color:hsl(177, 92%, 70%);
+      --theme-MainKey_back-color:hsl(268, 47%, 21%);
+      --theme-Mainkey_shadow-color:hsl(290, 70%, 36%);
+      --theme-Maintext-color:hsl(52, 100%, 62%);
+      --theme-Operation-color:hsl(52, 100%, 62%);
+    }

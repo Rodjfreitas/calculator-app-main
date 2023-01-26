@@ -161,6 +161,7 @@ label i{
 
 
 #operation{
+  height: 100px;
   display: var(--global-type-display);
   flex-direction: column;
   justify-content: flex-end;

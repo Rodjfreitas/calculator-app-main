@@ -24,9 +24,43 @@ class Calculator{
     this.updateScreen()
   }
 
-  //change valus of update screen
-  updateScreen(){
-    this.currentyOperationtext.innerText += this.currentyOperation;
+  //processando operações
+  processOperation(operation){
+    
+    let operationValue;
+    const previous = +this.previousOperationtext.innerText.split(" ")[0];
+    const current = +this.currentyOperationtext.innerText;
+
+    switch(operation){
+      case "+":
+        operationValue = previous + current
+        this.updateScreen(operationValue, operation,current,previous)
+        break;
+        default:
+          return;
+    }
+  }
+
+  //atualizando valores na tela operações
+  updateScreen(
+    operationValue = null, 
+    operation = null, 
+    current = null, 
+    previous = null
+    ){
+
+      console.log(operationValue,operation,current,previous);
+
+    if(operationValue === null) {
+      this.currentyOperationtext.innerText += this.currentyOperation;
+    } else{
+      if(previous === 0){
+        operationValue = current
+      }
+
+      this.previousOperationtext.innerText = `${operationValue} ${operation}`
+      this.currentyOperationtext.innerText ="";
+    }
   }
 }
 
@@ -44,7 +78,7 @@ buttons.forEach((btn)=>{
     if(+value >= 0 || value === "."){
       calc.addDigit(value);
     }else{
-      calc.addDigit("OP "+ value);
+      calc.processOperation(value);
     }
   })
 })

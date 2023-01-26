@@ -6,15 +6,45 @@ const previousOperationtext = document.querySelector('#previous-operation');
 const currentyOperationtext = document.querySelector('#currenty-operation');
 const buttons = document.querySelectorAll('#numbers');
 
+
+class Calculator{
+  constructor(previousOperationtext,currentyOperationtext){
+    this.previousOperationtext = previousOperationtext
+    this.currentyOperationtext = currentyOperationtext
+    this.currentyOperation = ""
+  }
+
+  addDigit(digit) {
+
+    if(digit === "." && this.currentyOperationtext.innerText.includes(".")){
+      return;
+    }
+
+    this.currentyOperation = digit;
+    this.updateScreen()
+  }
+
+  //change valus of update screen
+  updateScreen(){
+    this.currentyOperationtext.innerText += this.currentyOperation;
+  }
+}
+
+
+
+const calc = new Calculator(previousOperationtext,currentyOperationtext);
+
+
+
 /**criando evento para capturar valor da tecla */
 buttons.forEach((btn)=>{
   btn.addEventListener('click',(e)=>{
     const value = e.target.innerText;
     /**realizando a distinção do que é número e do que é operador */
     if(+value >= 0 || value === "."){
-      console.log(value);
+      calc.addDigit(value);
     }else{
-      console.log("OP "+ value);
+      calc.addDigit("OP "+ value);
     }
   })
 })

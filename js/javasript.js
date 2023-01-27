@@ -26,6 +26,14 @@ class Calculator{
 
   //processando operações
   processOperation(operation){
+    if(this.currentyOperationtext.innerText === ""){
+      //change operation
+      if(this.previousOperationtext.innerText !== ""){
+        this.changeOperation(operation);
+
+      }
+      return;
+    }
     
     let operationValue;
     const previous = +this.previousOperationtext.innerText.split(" ")[0];
@@ -73,6 +81,17 @@ class Calculator{
       this.previousOperationtext.innerText = `${operationValue} ${operation}`
       this.currentyOperationtext.innerText ="";
     }
+  }
+
+  //change operation
+  changeOperation(operation){
+    const mathOperations = ["*", "/", "+", "-"]
+
+    if(!mathOperations.includes(operation)){
+      return;
+    }
+
+    this.previousOperationtext.innerText = this.previousOperationtext.innerText.slice(0,-1) + operation;
   }
 }
 

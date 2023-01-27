@@ -26,7 +26,7 @@ class Calculator{
 
   //processando operações
   processOperation(operation){
-    if(this.currentyOperationtext.innerText === ""){
+    if(this.currentyOperationtext.innerText === "" & operation !== "RESET"){
       //change operation
       if(this.previousOperationtext.innerText !== ""){
         this.changeOperation(operation);
@@ -56,6 +56,14 @@ class Calculator{
         operationValue = previous * current
         this.updateScreen(operationValue, operation,current,previous)
         break;
+      case "DEL":
+        this.processDelOperator();
+        break;
+      case "RESET":
+        this.processResetOperator();
+        break;
+      case "=":
+        this.processEqualOperator();
         default:
           return;
     }
@@ -91,7 +99,24 @@ class Calculator{
       return;
     }
 
-    this.previousOperationtext.innerText = this.previousOperationtext.innerText.slice(0,-1) + operation;
+    this.previousOperationtext.innerText = 
+      this.previousOperationtext.innerText.slice(0,-1) + operation;
+  }
+
+  processDelOperator(){
+    this.currentyOperationtext.innerText = 
+      this.currentyOperationtext.innerText.slice(0,-1);
+  }
+
+  processResetOperator(){
+    this.currentyOperationtext.innerText ="";
+    this.previousOperationtext.innerText ="";
+  }
+
+  processEqualOperator(){
+    const operation = previousOperationtext.innerText.split(" ")[1]
+
+    this.processOperation(operation);
   }
 }
 

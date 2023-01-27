@@ -162,10 +162,12 @@ label i{
 
 #operation{
   height: 100px;
-  display: var(--global-type-display);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   flex-direction: column;
   justify-content: flex-end;
-  padding: var(--global-size-space);
+  padding:5px;
   margin: var(--global-size-space);
   background-color:var(--theme-operation_screen-color) ;
   color:var(--theme-Operation-color);
@@ -177,18 +179,25 @@ label i{
 
 #previous-operation,
 #currenty-operation{
+  width: 100%;
+  display: var(--global-type-display);
   overflow-wrap: break-word;
   text-align: right;
+  
 }
 
 #previous-operation{
-  font-size: var(--global-size-space);
+  font-size: 30px;
   min-height: 16px;  
   padding: 5px;
   text-align: right;
   font-weight: 500;
+  justify-content: flex-end;
 }
 
+#currenty-operation{
+  justify-content: flex-end;
+}
 
 
 

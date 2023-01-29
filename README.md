@@ -2,9 +2,8 @@
 
 <h2>Objetivo</h2>
 
-<p>Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSSe a criação de variáveis dentro do css.</p>
-
-<p> Outro conteúdo novo que executarei neste projeto é a criação de uma chave para alterar o tema de exibição da tela e do seu conteúdo.</p>
+<p>Escolhi este projeto por ter uma complexidade maior no que tange a utilização de conhecimentos do JavaScript. Além disso, esse projeto permitirá trabalhar a propriedade grid do CSS e a criação de variáveis dentro do css.
+Outro conteúdo novo que executarei neste projeto é a criação de uma chave para alterar o tema de exibição da tela e do seu conteúdo.</p>
 
 <h2>Desafios</h2>
 
@@ -12,10 +11,10 @@
 
 <h2>Aprendizados</h2>
 
-🕮 <p>Criar menu toggle;</p>
-🕮 <p>Declarar variáveis no css;</p>
-🕮 <p>Aplicabilidade do input e seus tipos;</p>
-🕮 <p>Transição de temas de página</p>
+🕮 Criar menu toggle;<br>
+🕮 Declarar variáveis no css;<br>
+🕮 Aplicabilidade do input e seus tipos;<br>
+🕮 Transição de temas de página;<br>
 
 <h2>O Desenvolvimento</h2>
 
@@ -153,10 +152,7 @@
           footer.classList.toggle('active');
     })
 
-
 <h3> Dia 3 </h3>
-
-    
 
   <p>Hoje a principal tarefa do dia era finalizar a transição de temas com três opções. A dificuldade maior era realizar a animação da bolinha nas posições. O principal erro era que eu havia criado apenas um botão do tipo checkbox e uma label, e a animação ocorria apenas da direta para esquerda, sem a posição central habilitada.</p>
 
@@ -165,7 +161,6 @@
         <input type="radio"  id="chk1" class="checkbox" name="theme">
         <input type="radio"  id="chk2" class="checkbox" name="theme">
         <input type="radio"  id="chk3" class="checkbox" name="theme">
-
 
   <p>Mesmo com todas essas alterações, e com a funcionalidade do tema se aplicando corretamente, aprendi uma maneira mais eficaz de simplificar o código de transição de tema, utilizando as variáveis de css. Declarando as variáveis, separando-as por classes inseridas no html, pude enxugar as linhas de código do css e também do java script. Reorganizei todo o código em cima desse conceito, e estou maravilhado com o poder que a declaração de variáveis dentro do css tem.</p>
 
@@ -220,3 +215,9 @@
       --theme-Maintext-color:hsl(52, 100%, 62%);
       --theme-Operation-color:hsl(52, 100%, 62%);
     }
+
+
+  <h3> Dias 4 à 7
+
+  <p> Estes dias foram reservados para a criação das operações. 
+  <p> Javascript ainda tem sido muito desafiador. Para este projeto, precisei criá-lo com auxilio em todos os passos da criação do código. Consigo entender muitas funções e lógicas utilizadas, porém me falta autonomia para exercê-las. Nestes dias de confecção deste projeto, tenho estudado bastante a lingagem para começar a fazer códigos mais complexos sem utilizar inteiramente de auxilio. Próximo objetivos, é dar um passo para trás e começar a trabalhar o javascript com maior qualidade para fixar os conhecimentos nesta linguagem.

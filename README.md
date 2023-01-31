@@ -221,3 +221,11 @@ Outro conteúdo novo que executarei neste projeto é a criação de uma chave pa
 
   <p> Estes dias foram reservados para a criação das operações. 
   <p> Javascript ainda tem sido muito desafiador. Para este projeto, precisei criá-lo com auxilio em todos os passos da criação do código. Consigo entender muitas funções e lógicas utilizadas, porém me falta autonomia para exercê-las. Nestes dias de confecção deste projeto, tenho estudado bastante a lingagem para começar a fazer códigos mais complexos sem utilizar inteiramente de auxilio. Próximo objetivos, é dar um passo para trás e começar a trabalhar o javascript com maior qualidade para fixar os conhecimentos nesta linguagem.
+
+  ## 🖥️ Print de Telas
+
+  ![home-theme1](https://user-images.githubusercontent.com/119018022/215757771-5e0fccce-5151-4a20-bfaa-abd85f33930e.jpg)
+
+![home-theme3](https://user-images.githubusercontent.com/119018022/215757774-3a76634f-7bf8-453b-af74-5ff10ff77a0e.jpg)
+
+![home-theme2](https://user-images.githubusercontent.com/119018022/215757778-35c74b83-ba5b-4c1b-bcc4-dbeed7476375.jpg)
